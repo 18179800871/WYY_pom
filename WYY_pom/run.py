@@ -1,0 +1,20 @@
+from common.sendMail import send_main
+import datetime
+import time
+from HTMLTestReportCN import HTMLTestRunner
+import os
+import unittest
+suite = unittest.TestSuite()
+case_dir = './'
+# 基于路径来用例,组合成套件 常用方法
+disciver = unittest.defaultTestLoader.discover(start_dir=case_dir, pattern='unit*.py')
+# 设置保存路径
+report_path = './report/'
+#报告的文件名称
+report_file = report_path + time.strftime('%Y-%m-%d-%H-%M',time.localtime(time.time())) + 'report1.html'
+if not os.path.exists(report_path):
+    os.mkdir(report_path)
+with open(report_file , 'wb') as file:
+    runner = HTMLTestRunner(stream=file,title='第一份测试报告',description='这是测试报告的描述',tester='沈华明')
+    runner.run(disciver)
+# send_main(report_file, mail_to=['1520147747@qq.com', 'shm147256@164.com'])

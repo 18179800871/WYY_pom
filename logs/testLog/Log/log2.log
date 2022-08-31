@@ -1,0 +1,17 @@
+debug模式
+info模式
+waning模式
+error模式
+critical模式
+2020-11-01 21:04:49,477 testLog.py DEBUG <module> debug模式
+2020-11-01 21:04:49,477 testLog.py INFO <module> info模式
+2020-11-01 21:04:49,477 testLog.py WARNING <module> waning模式
+2020-11-01 21:04:49,477 testLog.py ERROR <module> error模式
+2020-11-01 21:04:49,477 testLog.py CRITICAL <module> critical模式
+2020-11-01 21:07:15,283 testLog.py DEBUG <module> debug模式
+2020-11-01 21:07:15,283 testLog.py INFO <module> info模式
+2020-11-01 21:07:15,283 testLog.py WARNING <module> waning模式
+2020-11-01 21:07:15,284 testLog.py ERROR <module> error模式
+2020-11-01 21:07:15,284 testLog.py CRITICAL <module> critical模式
+2020-11-01 21:17:24,074 testLog.py ERROR test 错误计算a+2
+2020-11-01 21:20:16,614 testLog.py INFO test 正确计算1+2

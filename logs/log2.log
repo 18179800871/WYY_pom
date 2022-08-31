@@ -1,0 +1,15 @@
+debugģʽ
+infoģʽ
+warningģʽ
+waringģʽ
+criticalģʽ
+2021-03-21 21:11:55,397 log_s.py DEBUG <module> debugģʽ
+2021-03-21 21:11:55,397 log_s.py INFO <module> infoģʽ
+2021-03-21 21:11:55,397 log_s.py WARNING <module> warningģʽ
+2021-03-21 21:11:55,397 log_s.py ERROR <module> waringģʽ
+2021-03-21 21:11:55,397 log_s.py CRITICAL <module> criticalģʽ
+2021-03-21 21:53:57,623 log_s.py DEBUG <module> debugģʽ
+2021-03-21 21:53:57,623 log_s.py INFO <module> infoģʽ
+2021-03-21 21:53:57,623 log_s.py WARNING <module> warningģʽ
+2021-03-21 21:53:57,623 log_s.py ERROR <module> waringģʽ
+2021-03-21 21:53:57,623 log_s.py CRITICAL <module> criticalģʽ

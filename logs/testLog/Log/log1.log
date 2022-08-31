@@ -1,0 +1,12 @@
+2020-11-01 20:34:32,715 base_log.py INFO <module> info模式
+2020-11-01 20:34:32,715 base_log.py WARNING <module> warning模式
+2020-11-01 20:34:32,715 base_log.py ERROR <module> error模式
+2020-11-01 20:34:32,715 base_log.py CRITICAL <module> critical模式
+2020-11-01 20:36:02,487 base_log.py INFO <module> infoģʽ
+2020-11-01 20:36:02,487 base_log.py WARNING <module> warningģʽ
+2020-11-01 20:36:02,487 base_log.py ERROR <module> errorģʽ
+2020-11-01 20:36:02,488 base_log.py CRITICAL <module> criticalģʽ
+2020-11-01 20:36:46,121 base_log.py INFO <module> info模式
+2020-11-01 20:36:46,121 base_log.py WARNING <module> warning模式
+2020-11-01 20:36:46,121 base_log.py ERROR <module> error模式
+2020-11-01 20:36:46,121 base_log.py CRITICAL <module> critical模式
