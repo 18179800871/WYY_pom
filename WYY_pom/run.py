@@ -1,7 +1,7 @@
 from common.sendMail import send_main
 import datetime
 import time
-from HTMLTestReportCN import HTMLTestRunner
+from common.HTMLTestRunner import HTMLTestRunner
 import os
 import unittest
 suite = unittest.TestSuite()
@@ -15,6 +15,7 @@ report_file = report_path + time.strftime('%Y-%m-%d-%H-%M',time.localtime(time.t
 if not os.path.exists(report_path):
     os.mkdir(report_path)
 with open(report_file , 'wb') as file:
-    runner = HTMLTestRunner(stream=file,title='第一份测试报告',description='这是测试报告的描述',tester='沈华明')
+    runner = HTMLTestRunner(stream=file, verbosity=1, title='AI中台接口测试报告', description='AI中台场景大黄蜂与卖货宝接入接口与大脑片区新增修改',
+                            is_thread=False, retry=1, save_last_try=True)
     runner.run(disciver)
 # send_main(report_file, mail_to=['1520147747@qq.com', 'shm147256@164.com'])
