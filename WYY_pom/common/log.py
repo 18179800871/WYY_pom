@@ -1,6 +1,7 @@
 import logging
+import os
 
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 class Logger:
     def get_logger(self):
         # 创建日志对象
@@ -19,7 +20,7 @@ class Logger:
             fmt = logging.Formatter('%(asctime)s %(filename)s %(levelname)s %(funcName)s %(message)s')
 
             # 创建一个处理器 输出到文本中
-            fh = logging.FileHandler('../log/log.log')
+            fh = logging.FileHandler(os.path.join(BASE_DIR, 'log.log'))
 
             # 把文本处理器加载到日志中
             logger.addHandler(fh)
