@@ -1,0 +1,48 @@
+数据库增删改查			
+新增						
+INSERT INTO 表名 ( 列名1, 列名2,...列名N ) VALUES( 值1, 值2,...值N );
+删除 
+DELETE FROM 表名称 WHERE 列名称 = 值
+DELETE FROM 表名 [WHERE 子句] [ORDER BY 子句(顺序删除)]
+修改
+UPDATE 表名 SET 字段=值 [WHERE 子句 ] [ORDER BY 子句] [LIMIT 子句]
+UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值
+查询
+SELECT * FROM 表名 WHER  * 代表所有列
+
+PYTHON
+对字符串操作: upper()#将字母大写 title()#对单词的首个字符大写 strip()#去除两端的空格
+endswith()在什么结尾 startswith()判断字符串以什么开头, isdigit()判断字符串是不是数字组成
+集合: {} add新增 删除pop()删除最后数据, remove(数据)删除指定数据  一个重要的作用 可以去重 无序的
+列表: append(数据)新增 , insert(位置,数据) 指定位置插入 pop(3)指定索引删除 remove('马超')指定元素删除 list[1]根据索引查询 lst[4] = '凯' 根据索引修改
+字典: dic['a'] = 'A' 新增/修改 dic.pop('jay')指定key删除
+# for key in dic:
+#     print(key, dic[key]) # 拿出字典的值
+# # 希望把所有的key 都保存在列表中
+
+
+# print(list(dic.keys())) # 拿到所有的key														元组: 不可变
+# # 拿所有的value
+# print(list(dic.values())																		try:																														
+# # 直接拿到字典中的key和value   																	执行代码   
+# for item in dic.items():																		except:
+#     key = item[0]																					报错后执行 返回定义的报错
+#     value = item[1]
+#     print(key, value)
+装饰器
+def wrapper(fn):  wrapper: 装饰器  fn: 目标函数
+    def inner(*args, **kwargs):
+   # 在目标函数前运行
+        ret = fn(*args, **kwargs)
+        return ret    # 被执行的函数
+                # 在目标函数执行之后运行
+    return inner   # 不能加括号
+	 
+	LINUX top 查看实时cpu 占用  shift+m 排序查看
+			free 查看内存
+
+
+
+
+深拷贝: 新开辟一块内存地址,将原始数据全部拷贝到新的内存地址,原数据和新数据无影响,拷贝时间长
+浅拷贝: 通过原地址访问原数据,子对象是被引用,修改原数据中的可变数据类型,会影响浅拷贝的数据,在浅拷贝的数据中修改数据,会影响原数据的内容
